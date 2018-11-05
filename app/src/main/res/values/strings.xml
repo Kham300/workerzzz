@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">workers</string>
+    <string name="planJob">Планирование работ</string>
+    <string name="reports">Отчеты</string>
+    <string name="doing">Выполнение работ</string>
+    <string name="obj_name">Наименование Объекта:</string>
+    <string name="info_etap_of_job">Помешения и этапы работ</string>
+    <string name="vnp_tip">ВНП/ТП/ТЭ/ТипЭ:</string>
+    <string name="place_of_job">Место производства работ</string>
+    <string name="korpus">Корпус:</string>
+    <string name="x1">указать: X1</string>
+    <string name="z1_z2">Указать: Z1 - Z2</string>
+    <string name="plan_job_date">Планируемые даты производства работ</string>
+    <string name="date_begin">Дата начала</string>
+    <string name="date_end">Дата завершения</string>
+    <string name="end_input_data">Завершить ввод этапа?</string>
+    <string name="etap_work">Этап работ:</string>
+    <string name="section">Секция:</string>
+    <string name="stages">Этаж/Этажи:</string>
+    <string name="lk">выбор: ЛК</string>
+    <string name="st">выбор: Шт</string>
+    <string name="choose_from_list">Выборать из списка</string>
+</resources>
