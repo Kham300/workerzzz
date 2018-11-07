@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ru.workers">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,15 +19,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DoingJobActivity"
+        <activity android:name=".activities.DoingJobActivity"
             android:label="Выполнение Работ">
         </activity>
 
-        <activity android:name=".PlanJobActivity"
+        <activity android:name=".activities.PlanJobActivity"
             android:label="Планирование работ">
         </activity>
 
-        <activity android:name=".ReportsActivity"
+        <activity android:name=".activities.ReportsActivity"
             android:label="Отчеты">
         </activity>
     </application>
