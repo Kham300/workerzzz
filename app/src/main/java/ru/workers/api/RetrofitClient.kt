@@ -20,7 +20,7 @@ object RetrofitClient {
         get() {
             if (ourIncetan == null) {
                 ourIncetan = Retrofit.Builder()
-                        .baseUrl(BASE_URL)//.client(create().build())
+                        .baseUrl(BASE_URL).client(create().build())
                         .addConverterFactory(GsonConverterFactory.create())
                         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                         .build()

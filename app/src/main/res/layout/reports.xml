@@ -244,7 +244,7 @@
                     android:textSize="15sp" />
 
                 <EditText
-                    android:id="@+id/text_section"
+                    android:id="@+id/text_section3"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.4"

@@ -6,6 +6,7 @@
     <string name="obj_name">Наименование Объекта:</string>
     <string name="info_etap_of_job">Помешения и этапы работ</string>
     <string name="vnp_tip">ВНП/ТП/ТЭ/ТипЭ:</string>
+    <string name="vnp_mop">МОП/ЛК/КВ/ЛОД:</string>
     <string name="place_of_job">Место производства работ</string>
     <string name="korpus">Корпус:</string>
     <string name="x1">указать: X1</string>
@@ -20,4 +21,10 @@
     <string name="lk">выбор: ЛК</string>
     <string name="st">выбор: Шт</string>
     <string name="choose_from_list">Выборать из списка</string>
+    <string-array name="catlist">
+        <item>Барсик</item>
+        <item>Мурзик</item>
+        <item>Васька</item>
+        <item>Рыжик</item>
+    </string-array>
 </resources>
