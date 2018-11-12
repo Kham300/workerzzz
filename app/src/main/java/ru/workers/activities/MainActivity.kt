@@ -1,10 +1,13 @@
 package ru.workers.activities
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
-import android.view.View
 import android.content.Intent
+import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.view.View
 import ru.workers.R
+import ru.workers.activities.doing.DoingJobActivity
+import ru.workers.activities.planning.PlanJobActivity
+import ru.workers.activities.reports.ReportsActivity
 
 
 class MainActivity : AppCompatActivity() {

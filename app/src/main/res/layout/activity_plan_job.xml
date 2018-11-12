@@ -119,16 +119,12 @@
                     android:text="@string/vnp_mop"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/text_tip_st"
+                <Spinner
+                    android:id="@+id/info_mop_plan_spinner"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.4"
-                    android:gravity="left|center"
-                    android:text="ЛК"
-                    android:maxLines="1"
-                    android:background="@color/colorLightBlue"
-                    android:textSize="14sp" />
+                    android:prompt="@string/choose_from_list" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -152,16 +148,12 @@
                     android:text="@string/etap_work"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/text_tip_lk"
+                <Spinner
+                    android:id="@+id/info_etap_plan_spinner"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.4"
-                    android:gravity="left|center"
-                    android:text="Шт"
-                    android:maxLines="1"
-                    android:background="@color/colorLightBlue"
-                    android:textSize="14sp" />
+                    android:prompt="@string/choose_from_list" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -217,15 +209,12 @@
                     android:background="@color/colorGrey"
                     android:textSize="16sp" />
 
-                <EditText
-                    android:id="@+id/text_korp"
+                <Spinner
+                    android:id="@+id/info_korp_plan_spinner"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.4"
-                    android:hint="@string/x1"
-                    android:maxLines="1"
-                    android:background="@color/colorLightYellow"
-                    android:textSize="16sp" />
+                    android:prompt="@string/choose_from_list" />
             </LinearLayout>
 
             <LinearLayout
@@ -244,15 +233,12 @@
                     android:background="@color/colorGrey"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/text_section"
+                <Spinner
+                    android:id="@+id/info_secition_plan_spinner"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.4"
-                    android:hint="@string/x1"
-                    android:maxLines="1"
-                    android:background="@color/colorLightYellow"
-                    android:textSize="16sp" />
+                    android:prompt="@string/choose_from_list" />
 
 
             </LinearLayout>
@@ -273,15 +259,12 @@
                     android:background="@color/colorGrey"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/text_etaj"
+                <Spinner
+                    android:id="@+id/info_etaji_plan_spinner"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.4"
-                    android:hint="@string/z1_z2"
-                    android:maxLines="1"
-                    android:background="@color/colorLightYellow"
-                    android:textSize="16sp" />
+                    android:prompt="@string/choose_from_list" />
             </LinearLayout>
         </LinearLayout>
 
@@ -369,21 +352,18 @@
                     android:textSize="14sp"
                     tools:ignore="RtlCompat" />
 
-                <TextView
-                    android:id="@+id/textVie89w4"
+                <Button
+                    android:id="@+id/commit_btn"
                     android:layout_width="wrap_content"
+                    android:onClick="commitChanges"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:gravity="left|center"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
                     android:text="Да"
-                    android:textAlignment="viewEnd"
+                    android:textAlignment="center"
                     android:textSize="14sp"
                     tools:ignore="RtlCompat" />
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center" />
 
             </LinearLayout>
 

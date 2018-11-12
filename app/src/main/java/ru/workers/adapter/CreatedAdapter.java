@@ -10,17 +10,17 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import ru.workers.R;
-import ru.workers.model.objects.Data;
+import ru.workers.model.objects.generated.Data;
 
 public class CreatedAdapter extends ArrayAdapter<Data> {
     private Activity context;
-    ArrayList<Data> data = null;
+    ArrayList<Data> data;
 
-    public CreatedAdapter(Activity context, int resource,
-                          ArrayList<Data> data) {
+    public CreatedAdapter(Activity context, int resource, ArrayList<Data> data) {
         super(context, resource, data);
         this.context = context;
         this.data = data;
+
     }
 
     @Override
@@ -29,7 +29,7 @@ public class CreatedAdapter extends ArrayAdapter<Data> {
     }
 
     @Override
-    public View getDropDownView(int position, View convertView, ViewGroup parent) {
+    public View getDropDownView(final int position, View convertView, final ViewGroup parent) {
         View row = convertView;
         if (row == null) {
             LayoutInflater inflater = context.getLayoutInflater();
@@ -48,8 +48,13 @@ public class CreatedAdapter extends ArrayAdapter<Data> {
                 createdName.setText(item.getNameRu());
             }
 
+
         }
+
+
 
         return row;
     }
+
+
 }

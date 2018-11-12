@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".activities.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,16 +21,22 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.DoingJobActivity"
-            android:label="Выполнение Работ">
+        <activity android:name=".activities.doing.DoingJobActivity"
+            android:label="Выполнение Работ"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".activities.PlanJobActivity"
-            android:label="Планирование работ">
+        <activity android:name=".activities.planning.PlanJobActivity"
+            android:label="Планирование работ"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".activities.ReportsActivity"
-            android:label="Отчеты">
+        <activity android:name=".activities.reports.ReportsActivity"
+            android:label="Отчеты"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
