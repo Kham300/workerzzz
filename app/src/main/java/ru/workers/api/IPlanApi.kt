@@ -1,10 +1,7 @@
 package ru.workers.api
 
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Query
+import retrofit2.http.*
 import ru.workers.model.objects.generated.Created
 import ru.workers.model.objects.generated.Sections
 
@@ -34,15 +31,8 @@ interface IPlanApi {
     @GET("/api/sections?SessionGUID=918a7cf1-d02c-422e-b149-511b9fbd28dc")
     fun getSections(@Query("Object_id") objectId: String, @Query("BuildingObjectRow_id") buildingObjRowId: String): Call<Sections>
 
-
+    @FormUrlEncoded
     @POST("/api/planCommit?SessionGUID=918a7cf1-d02c-422e-b149-511b9fbd28dc")
-    fun sendData(@Field("Object_id") objId: String?,
-                 @Field("RoomType_id") roomType: String?,
-                 @Field("WorkStage_id") workStageId: String?,
-                 @Field("BuildingObjectRow_id") objRowId: String,
-                 @Field("BuildingObjectSection_id") sectionId: String?,
-                 @Field("Floor") floor: String?,
-                 @Field("DateStart") dateStart: String?,
-                 @Field("DateEnd") dateEnd: String?)
+    fun sendData(@FieldMap map: MutableMap<String, String>)
 
 }

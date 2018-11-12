@@ -15,7 +15,7 @@ interface PlanContract {
         fun onItemSelected()
         fun requestDataFromServer(viewId: String?, objId: String?, roomType: String?)
         fun requestDataFromServer(objId: String?, objRowId:String)
-        fun requestDataCommit(objId: String?, roomType: String?, workStageId: String?, objRowId:String, sectionId:String?, floor:String?, dateStart:String?, dateEnd: String?)
+        fun requestDataCommit(map: MutableMap<String, String>/*objId: String?, roomType: String?, workStageId: String?, objRowId:String, sectionId:String?, floor:String?, dateStart:String?, dateEnd: String?*/)
     }
 
     interface PlanView {
@@ -44,6 +44,6 @@ interface PlanContract {
         fun getNoticedArrayList(onFinishedListener: onFinishedListener, viewId: String?, objId: String?, var2: String?)
         fun getNoticedArrayListForSections(onFinishedListener: onFinishedListener, objId: String?, objRowId: String)
 
-        fun commit(onFinishedListener: onFinishedListener, objId: String?, roomType: String?, workStageId: String?, objRowId:String, sectionId:String?, floor:String?, dateStart:String?, dateEnd: String?)
+        fun commit(onFinishedListener: onFinishedListener, map: MutableMap<String, String>)
     }
 }

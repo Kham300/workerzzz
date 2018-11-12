@@ -172,15 +172,16 @@ class PlanJobActivity : AppCompatActivity(), PlanContract.PlanView {
     }
 
     fun commitData() {
-        val str: String = (objectName?.selectedItem as Data).tid
-        val str1: String = (vnp?.selectedItem as Data).tid
-        val str2: String = (etapJob?.selectedItem as Data).tid
-        val str3: String = (stage?.selectedItem as Data).tid
-        val str4: String = (secsion?.selectedItem as Data2).tid
-        val str5: String = (etaj?.selectedItem as String)
-        val str6: String = startDate?.text.toString()
-        val str7: String = endDate?.text.toString()
-        presenter?.requestDataCommit(str, str1, str2, str3, str4, str5, str6, str7)
+        val map = mutableMapOf<String, String>()
+        map["Object_id"]=(objectName?.selectedItem as Data).tid
+        map["RoomType_id"]=(vnp?.selectedItem as Data).tid
+        map["WorkStage_id"]=(etapJob?.selectedItem as Data).tid
+        map["BuildingObjectRow_id"]=(stage?.selectedItem as Data).tid
+        map["BuildingObjectSection_id"]=(secsion?.selectedItem as Data2).tid
+        map["Floor"]=(etaj?.selectedItem as String)
+        map["DateStart"]=startDate?.text.toString()
+        map["DateEnd"]=endDate?.text.toString()
+        presenter?.requestDataCommit(map/*str, str1, str2, str3, str4, str5, str6, str7*/)
     }
 
     fun commitChanges(v: View) {

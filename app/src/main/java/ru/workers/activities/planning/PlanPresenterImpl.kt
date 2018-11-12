@@ -26,8 +26,8 @@ class PlanPresenterImpl(planView: PlanContract.PlanView, getNoticeIntractor: Pla
         getNoticeIntractor?.getNoticedArrayListForSections( this, objId, objRowId)
     }
 
-    override fun requestDataCommit(objId: String?, roomType: String?, workStageId: String?, objRowId: String, sectionId: String?, floor: String?, dateStart: String?, dateEnd: String?) {
-        getNoticeIntractor?.commit(this, objId, roomType, workStageId, objRowId, sectionId, floor, dateStart, dateEnd)
+    override fun requestDataCommit(map: MutableMap<String, String>/*objId: String?, roomType: String?, workStageId: String?, objRowId: String, sectionId: String?, floor: String?, dateStart: String?, dateEnd: String?*/) {
+        getNoticeIntractor?.commit(this, map/*objId, roomType, workStageId, objRowId, sectionId, floor, dateStart, dateEnd*/)
     }
 
 

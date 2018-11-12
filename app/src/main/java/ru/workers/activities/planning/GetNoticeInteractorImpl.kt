@@ -79,9 +79,9 @@ class GetNoticeInteractorImpl : PlanContract.GetNoticeInteractor {
         })
     }
 
-    override fun commit(onFinishedListener: PlanContract.GetNoticeInteractor.onFinishedListener, objId: String?, roomType: String?, workStageId: String?, objRowId: String, sectionId: String?, floor: String?, dateStart: String?, dateEnd: String?) {
+    override fun commit(onFinishedListener: PlanContract.GetNoticeInteractor.onFinishedListener, map: MutableMap<String, String>) {
         val service = RetrofitClient.instance.create(IPlanApi::class.java)
-        service.sendData(objId, roomType, workStageId, objRowId, sectionId, floor, dateStart, dateEnd)
+        service.sendData(map)
         onFinishedListener.showToast("Changes commit ")
     }
 }
